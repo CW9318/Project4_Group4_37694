@@ -1,24 +1,109 @@
 body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+
+}
+
+.container{
+  display: flex;
+  height: 100vh;
+}
+
+#sidebar{
+  flex: 2;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+
+
+  text-decoration: none;
+  border: none;
   text-align: center;
+  font-weight: 300;
+  color: #FFFFFF;
 }
 
-a {
-  color: rgba(#000, 0.7);
-
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-  }
+#sidebar a {
+  flex: 1; 
+  background-color: transparent; 
+  color: inherit; 
+  text-decoration: none; 
+  font-size: 20px; 
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+#sidebar a:hover{
+  color: #49AAD4;
+  cursor: pointer;
+}
+
+#sidebar #sidebar-name{
+  flex: 1;
+  font-size: 40px;
+  background-color: transparent;
+}
+
+#sidebar #sidebar-name:hover{
+  cursor: pointer;
+}
+
+#mainpage{
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  margin: 0 5% 0;
+  max-height: 100vh;
+}
+
+#home{
+  flex: 1;
+  // background-color: red;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 300;
+  color: #226E93;
+}
+
+#about{
+  height: 33vh;
+  flex: 1;
+  // background-color: blue;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+#about img {
+  flex: 1;
+  max-width: 100%;
+  height: 100%;
+}
+
+#about #about-profile{
+  flex: 4;
+  padding-left: 5%;
+  padding-top: 3%;
+}
+
+#bio{
+  flex: 1;
+  height: 33vh;
+  padding-top: 3%;
+  // background-color: green;
+}
+
+#news_title{
+  color: #000000;
+  font-family: Verdana, Arial;
+  font-weight: 700;
+}
+
+#news_normal{
+  color: #000000;
+  font-family: Verdana, Arial;
+  font-weight: 400;
 }

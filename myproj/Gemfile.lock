@@ -23,6 +23,7 @@ GEM
     fast_blank (1.0.1)
     fastimage (2.3.1)
     ffi (1.17.0-x64-mingw-ucrt)
+    ffi (1.17.0-x86_64-linux-gnu)
     haml (6.3.0)
       temple (>= 0.8.2)
       thor
@@ -109,6 +110,7 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   middleman (~> 4.5)
