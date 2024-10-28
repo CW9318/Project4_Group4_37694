@@ -5,7 +5,7 @@ title: Shaileshh Bojja Venkarakrishnan - Students
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= "Shaileshh Bojja Venkarakrishnan" %></title>
+    <title><%= data.students.title %></title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -24,13 +24,16 @@ title: Shaileshh Bojja Venkarakrishnan - Students
       </div>
       <div id="mainpage">
         <div id="list">
-            <p id="title">Students</p>
-            <p><%= "Yifan Mao (Ph.D.)" %><br></p>
-            <p><a href="https://yunqiz.com/">Yunqi Zhang (Ph.D.)<br></a></p>
-            <p><%= "Jingren Wei (Ph.D.)" %><br></p>
-            <p><%= "Arti Vedula (Ph.D., co-advised with  Prof. Abhishek  Gupta)" %><br></p>
-            <p><%= "Patrick Yang (Masters)" %><br></p>
-            <p><%= "Mel Gunawardena (Undergrad) " %><br></p>
+          <p id="title">Students</p>
+          <% data.students.students.each do |student| %>
+            <p>
+              <% if student["website"] %>
+                <a href="<%= student["website"] %>"><%= student["name"] %> (<%= student["degree"] %>)</a><br>
+              <% else %>
+                <%= student["name"] %> (<%= student["degree"] %>)<br>
+              <% end %>
+            </p>
+          <% end %>
         </div>
       </div>
     </div>
