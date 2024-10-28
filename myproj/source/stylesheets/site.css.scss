@@ -97,22 +97,23 @@ body {
   // background-color: green;
 }
 
-#title{
-  flex: 1;
-  margin-top: 8%;
-  margin-bottom: 8%;
-  font-size: 50px;
-  font-weight: 300;
-  color: #226E93;
+#news_title{
+  color: #000000;
+  font-family: Verdana, Arial;
+  font-weight: 700;
 }
 
-.tab {
-  display: inline-block;
-  width: 4.3ch;
-  height: 1em;
+#news_normal{
+  color: #000000;
+  font-family: Verdana, Arial;
+  font-weight: 400;
 }
 
-#list{
-  flex: 1;
-  height: 33vh;
+#news_table{
+  width:100%;
+  border: 1px solid black;
+}
+
+#news_article{
+  color:rgba(0,101,128,1);
 }
