@@ -96,3 +96,23 @@ body {
   padding-top: 3%;
   // background-color: green;
 }
+
+#title{
+  flex: 1;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  font-size: 50px;
+  font-weight: 300;
+  color: #226E93;
+}
+
+.tab {
+  display: inline-block;
+  width: 4.3ch;
+  height: 1em;
+}
+
+#list{
+  flex: 1;
+  height: 33vh;
+}
