@@ -11,6 +11,19 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+      <div class="container">
+      <div id="sidebar">
+        <a href="/" id="sidebar-name" class="button">
+          <%= "Shaileshh" %><br>
+          <%= "Bojja" %><br>
+          <%= "Venkarakrishnan" %>
+        </a>
+        <%= link_to "Home", "home.html", id: "sidebar-home", class: "button" %>
+        <%= link_to "Research", "research.html", id: "sidebar-research", class: "button" %>
+        <%= link_to "News", "news.html", id: "sidebar-news", class: "button" %>
+        <%= link_to "Teaching", "teaching.html", id: "sidebar-teaching", class: "button" %>
+        <%= link_to "Students", "students.html", id: "sidebar-students", class: "button" %>
+      </div>
     <%= yield %>
   </body>
 </html>
