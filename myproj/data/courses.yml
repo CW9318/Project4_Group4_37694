@@ -1,0 +1,13 @@
+title: "Shaileshh Bojja Venkarakrishnan - Teaching"
+courses:
+  - semester: "Spring '23"
+    subjects:
+      - "CSE 5469: Introduction to Blockchains and Decentralized Applications"
+      - "CSE 3461: Computer Networking"
+  - semester: "Spring '22"
+    subjects:
+      - "CSE 3461: Computer Networking"
+  - semester: "Spring '21"
+    subjects:
+      - "CSE 3461: Computer Networking"
+      - "CSE 5469: Data-driven Algorithms for Networking Systems"
